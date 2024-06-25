@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.table-row {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .table-row:hover {
+    transform: scale(1.05);
+    
+  }
+  
+.loader {
+  border: 14px solid #f3f3f3;
+  border-top: 14px solid #F44336; 
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
